@@ -1,5 +1,14 @@
 import numpy as np
-import librosa  
+try:
+    import librosa  # noqa: E402
+
+    _librosa_can_be_imported = True
+    _import_error = ""
+except Exception as e:
+    _librosa_can_be_imported = False
+    _import_error = (
+        f"Cannot import librosa because {e}. Make sure to correctly install librosa to be able to install it."
+    )
 from PIL import Image  
 
 
