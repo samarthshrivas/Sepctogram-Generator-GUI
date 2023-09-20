@@ -1,8 +1,8 @@
 import streamlit as st
 from mel import Mel
 
-st.set_page_config(page_title="SpecGen", page_icon=":📈:", layout="wide")
-st.title("📈 SpecGen")
+st.set_page_config(page_title="Spectogram Generator", page_icon=":📈:", layout="wide")
+st.title("📈 Spectogram Generator")
 
 uploaded_file = st.file_uploader("Drop Audio file for which you would like to view spectrogram for:", type=['wav', 'mp3'],)
 
