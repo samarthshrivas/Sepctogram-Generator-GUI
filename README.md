@@ -1,4 +1,4 @@
-# [SpecGen 📈](https://specgen.streamlit.app/)
+# [Spectogram Generator 📈](https://specgen.streamlit.app/)
 
 Streamlit Spectrogram Generator is a web application that allows users to generate spectrograms from audio files using the Mel spectrogram technique.
 
@@ -13,8 +13,8 @@ Streamlit Spectrogram Generator is a web application that allows users to genera
 1. Clone the repository:
 
     ```bash
-   git clone https://github.com/samarthshrivas/SpecGen/.git
-   cd specgen
+   git clone https://github.com/samarthshrivas/Sepctogram-Generator-GUI.git
+   cd Sepctogram-Generator-GUI
 2. Install the required dependencies:
 
     ```bash
