@@ -4,7 +4,7 @@ from mel import Mel
 st.set_page_config(page_title="Spectogram Generator", page_icon=":📈:", layout="wide")
 st.title("📈 Spectogram Generator")
 
-uploaded_file = st.file_uploader("Drop Audio file for which you would like to view spectrogram for:", type=['wav', 'mp3'],)
+uploaded_file = st.file_uploader("Drop Audio file for which you would like to view spectrogram for:", type=['wav', 'mp3'])
 
 def get_user_settings():
     x_res = st.sidebar.slider("x_res", min_value=64, max_value=2048, value=256, step=64, help="Increases Time on the ploted image")
@@ -37,7 +37,5 @@ if uploaded_file is not None:
     if image:
         st.image(image, caption=f"Spectrogram for Slice {slice_number}", use_column_width='auto' if column_width else False)
         st.audio(audio, sample_rate=mel.get_sample_rate())
-
-
-st.sidebar.title("About")
-st.sidebar.info("This is a Streamlit application to generate spectrograms from audio files using Mel spectrogram technique.")
+else:
+    st.info("Easily generate spectrograms from audio files using Mel spectrogram technique")
